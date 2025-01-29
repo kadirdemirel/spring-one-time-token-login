@@ -57,7 +57,7 @@ public class OttSuccessHandler implements OneTimeTokenGenerationSuccessHandler {
 
         try {
             var sendTo = oneTimeToken.getUsername();
-            String to = "kadirdemirel_17@hotmail.com";
+            String to = "<alıcı_email_adresi>";
             log.info("Sending One Time Token to username: {}", sendTo);
 
             String emailContent = buildEmailContent(sendTo, magicLink, templateName);
